@@ -1,0 +1,12 @@
+.Movie {
+  border-bottom: 1px solid black;
+}
+.Epispde-Index {
+  width: 20%;
+}
+.Epispde-Name {
+  width: 60%;
+}
+.Epispde-Cell {
+  width: 20%;
+}

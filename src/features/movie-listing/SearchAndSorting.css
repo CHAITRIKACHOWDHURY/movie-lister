@@ -1,0 +1,21 @@
+.SearchAndSortingPanel {
+  background-color: #EEEEEE;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.SortBy {
+  margin-right: 10px;
+}
+.Search {
+  flex-grow: 1;
+}
+.Btn-Tooltip {
+  width: 120px;
+  background-color: #FFFFFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}

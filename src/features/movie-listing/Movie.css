@@ -4,7 +4,7 @@
   align-items: center;
   max-width: 100%;
 }
-.Epispde-Index {
+.Epispde-index {
   width: 25%;
   padding-left: 20px;
   font-size: 0.9em;
@@ -12,10 +12,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.Epispde-Name {
+.Epispde-name {
   width: 60%;
 }
-.Epispde-Cell {
+.Epispde-cell {
   width: 15%;
   padding-right: 20px;
   font-size: 0.95em;

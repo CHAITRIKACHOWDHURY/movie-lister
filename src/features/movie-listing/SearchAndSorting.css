@@ -12,7 +12,7 @@
   flex-grow: 1;
   border-radius: 5px;
   border: 0.1em solid #C7C9CB;
-  height: 30px;
+  max-height: 30px;
   display: flex;
   background-color: #ffffff !important;
   align-items: center;
@@ -20,7 +20,7 @@
 }
 .Search-container-active {
   border: 0.1em solid #004d99 !important;
-  box-shadow: 2px 2px 4px rgba(114, 112, 153, 0.2) !important;
+  box-shadow: 5px 5px 7px rgba(139, 136, 192, 0.2) !important;
 }
 .Btn-tooltip {
   width: 200px;

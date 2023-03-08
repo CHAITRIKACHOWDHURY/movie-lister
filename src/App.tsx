@@ -17,8 +17,17 @@ interface Props {
   sortByYear: () => void;
 }
 
+/**
+ * 
+ * @param isLoading for data load indication
+ * @param results list of movies
+ * @param startLoadingMovies loads the movie list
+ * @param sortByEpisode sort by episode
+ * @param sortByYear sort by year
+ * @return HTML container
+ */
 const App = ({
-    results = [],
+    results,
     isLoading,
     startLoadingMovies,
     sortByEpisode,

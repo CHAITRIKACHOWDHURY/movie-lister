@@ -10,6 +10,5 @@ test('renders App Component', () => {
       <App />
     </Provider>
   );
-
   expect(screen.getByText(/Sort/i)).toBeInTheDocument();
 });

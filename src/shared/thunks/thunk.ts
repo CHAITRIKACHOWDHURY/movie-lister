@@ -2,8 +2,10 @@
 import { Dispatch } from "@reduxjs/toolkit";
 import { loadMoviesFailure, loadMoviesInProgress, loadMoviesSuccess } from "../actions/movieList.action";
 import ResponseObject from "../models/ResponseObject";
+import { AppThunk } from "../store/store";
 
-export const loadMovies = () => async (dispatch: Dispatch) => {
+// Call Api to get movie list
+export const loadMovies = (): AppThunk  => async (dispatch: Dispatch) => {
     try {
         dispatch(loadMoviesInProgress());
         const response = await fetch('https://swapi.dev/api/films/?format=json');

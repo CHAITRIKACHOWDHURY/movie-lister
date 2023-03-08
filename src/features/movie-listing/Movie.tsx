@@ -9,9 +9,9 @@ const Movie = ({item, movieSelected} : {item: MovieData, movieSelected: (item: M
       <div className="Epispde-Index"> 
         EPISODE {item.episode_id}
       </div>
-      <div className="Epispde-Name"> 
-        EPISODE {item.episode_id} - {item.title}
-      </div>
+      <h5 className="Epispde-Name"> 
+        {item.title}
+      </h5>
       <div className="Epispde-Cell"> 
         {item.release_date}
       </div>

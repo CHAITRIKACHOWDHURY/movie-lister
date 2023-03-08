@@ -37,7 +37,7 @@ const App = ({
         sortByYear={sortByYear}
         searchMovie={searchMovie}
         inputSearch={inputSearch}/>
-      <div className="Row">
+      <div className="Row Container">
         <MovieList
           movieSelected={movieSelected}
           results={results}

@@ -1,0 +1,15 @@
+.Movie-details {
+  padding: 20px;
+  border-left: 1px solid #C7C9CB;
+  max-width: 100%;
+}
+
+.No-selection {
+  border-left: 1px solid #C7C9CB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.No-selection > span {
+  font-weight: 700;
+}

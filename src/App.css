@@ -1,3 +1,13 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Container {
+  min-height: 90vh;
+}
+
 .Row {
   display: flex;
   flex-direction: row;
@@ -6,16 +16,4 @@
 
 .Column {
   width: 50%;
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
 }

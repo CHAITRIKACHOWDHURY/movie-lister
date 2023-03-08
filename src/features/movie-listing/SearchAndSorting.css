@@ -1,21 +1,89 @@
-.SearchAndSortingPanel {
-  background-color: #EEEEEE;
-  padding: 10px;
+.Search-and-sorting-panel {
+  background-color: #F6F7F8;
+  padding: 15px;
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid #C7C9CB;
 }
-.SortBy {
+.Sort-by {
   margin-right: 10px;
 }
-.Search {
+.Search-container {
   flex-grow: 1;
+  border-radius: 5px;
+  border: 0.1em solid #C7C9CB;
+  height: 30px;
+  display: flex;
+  background-color: #ffffff !important;
+  align-items: center;
+  box-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
 }
-.Btn-Tooltip {
-  width: 120px;
-  background-color: #FFFFFF;
+.Search-container-active {
+  border: 0.1em solid #004d99 !important;
+  box-shadow: 2px 2px 4px rgba(114, 112, 153, 0.2) !important;
+}
+.Btn-tooltip {
+  width: 200px;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
+  border: 1px solid #C7C9CB;
+  height: 200px;
+  top: 50px;
+  background-color: #ffffff;
+  font-family: sGeneva, Verdana, sans-serif;
+}
+.Btn-tooltip > h5 {
+  margin: 0px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border-bottom: 1px solid #C7C9CB;
+}
+.Btn-tooltip > div {
+  padding: 10px 20px;
+  width: calc(100% - 40px);
+  cursor: pointer;
+  font-size: 0.9em;
+  border-bottom: 1px solid #C7C9CB;
+}
+.Btn-tooltip > div:hover {
+  background-color: #F6F7F8;
+}
+.Close-icon {
+  background-image: url(../../../public/close.svg);
+  background-size: 15px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  margin-left: auto;
+}
+.Search-icon {
+  background-image: url(../../../public/search.svg);
+  background-size: 23px;
+  height: 23px;
+  width: 23px;
+  margin: 3px;
+}
+input {
+  outline: none;
+  border: none;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+button {
+  border: 0.1em solid #C7C9CB;
+  border-radius: 5px;
+  outline: none;
+  height: 30px;
+  background-color: #f9fafa !important;
+  padding: 0 10px;
+  color: #4E6E81;
+  cursor: pointer;
+  font-family: sGeneva, Verdana, sans-serif;
+}
+button:active, button:hover, .Btn-active {
+  background-color: #e6eeff !important;
+  color: #004d99;
 }

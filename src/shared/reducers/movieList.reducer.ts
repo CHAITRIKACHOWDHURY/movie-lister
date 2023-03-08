@@ -5,6 +5,7 @@ import { loadMoviesInProgress,
          sortByEpisodeAction,
          sortByYearAction } from "../actions/movieList.action";
 import MovieData from "../models/MovieData";
+import ResponseObject from "../models/ResponseObject";
 
 export default interface RootState {
   results: MovieData[];
@@ -18,10 +19,10 @@ export const movieListReducer = createReducer(initialState, (builder) => {
       .addCase(loadMoviesInProgress, (state: RootState) => {
         return {...state, isLoading: true};
       })
-      .addCase(loadMoviesSuccess, (state: RootState, action: any) => {
+      .addCase(loadMoviesSuccess, (state: RootState, action: {payload: ResponseObject}) => {
         return {...state, isLoading: false, results: action.payload.results};
       })
-      .addCase(loadMoviesFailure, (state: RootState, action: any) => {
+      .addCase(loadMoviesFailure, (state: RootState, action: {payload: unknown}) => {
         alert(action.payload);
         return {...state, isLoading: false};
       })

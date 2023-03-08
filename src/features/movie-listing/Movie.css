@@ -1,12 +1,22 @@
 .Movie {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #E7E8E8;
+  cursor: pointer;
+  align-items: center;
+  max-width: 100%;
 }
 .Epispde-Index {
-  width: 20%;
+  width: 25%;
+  padding-left: 20px;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .Epispde-Name {
   width: 60%;
 }
 .Epispde-Cell {
-  width: 20%;
+  width: 15%;
+  padding-right: 20px;
+  font-size: 0.95em;
 }
